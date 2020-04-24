@@ -19,7 +19,7 @@ typewrite <-
                              lines)
 
             if (add_to_readme == TRUE) {
-                write_to_readme(typewrite_message = output)
+                write_typewrite_to_readme(typewrite_message = output)
                 cat(output, sep = "\n")
             } else {
                 cat(output, sep = "\n")

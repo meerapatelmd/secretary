@@ -3,7 +3,7 @@
 #' @importFrom readr read_lines
 #' @export
 
-add_readme_section <-
+add_typewrite_readme_section <-
     function() {
             readme <- readr::read_lines(file = "README.md")
         if (!("# Typewrite Messages" %in% readme)) {

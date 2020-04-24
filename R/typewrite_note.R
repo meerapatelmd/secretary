@@ -22,7 +22,7 @@ typewrite_note <-
                                  lines)
 
                 if (add_to_readme == TRUE) {
-                    write_to_readme(typewrite_message = x)
+                    write_typewrite_to_readme(typewrite_message = x)
                     cat(output, sep = "\n")
                 } else {
                     cat(output, sep = "\n")
