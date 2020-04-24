@@ -12,17 +12,17 @@ typewrite_bold <-
                 x <- paste(..., collapse = " ")
                 x <- stringr::str_replace_all(x, "([ ]{1})([[:punct:]]{1,}$)", "\\2")
 
-                x <- crayon::bold(x)
+                x2 <- crayon::bold(x)
 
                 lines <- paste(rep("\n", line_number), collapse = "")
                 indent <- paste(rep("\t", tabs), collapse = "")
                 output <- paste0(lines,
                                  indent,
-                                 x,
+                                 x2,
                                  lines)
 
                 if (add_to_readme == TRUE) {
-                    write_to_readme(typewrite_message = paste(..., collapse = " "))
+                    write_to_readme(typewrite_message = x)
                     cat(output, sep = "\n")
                 } else {
                     cat(output, sep = "\n")
