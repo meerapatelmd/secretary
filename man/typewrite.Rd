@@ -4,14 +4,14 @@
 \alias{typewrite}
 \title{Returns a phrase with formatting}
 \usage{
-typewrite(..., tabs = 0, c_return_lines = 1)
+typewrite(..., tabs = 0, line_number = 1, add_to_readme = TRUE)
 }
 \arguments{
 \item{...}{words in the phrase}
 
 \item{tabs}{number of tab spacing desired. defaults to 1.}
 
-\item{c_return}{number of lines wanted after the phrase. defaults to 1.}
+\item{line_number}{number of lines wanted after the phrase. defaults to 1.}
 }
 \description{
 Returns a phrase with formatting
