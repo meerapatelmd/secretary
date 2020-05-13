@@ -4,7 +4,7 @@
 \alias{typewrite_bold}
 \title{Returns a message in console in bold}
 \usage{
-typewrite_bold(..., tabs = 0, line_number = 1, add_to_readme = TRUE)
+typewrite_bold(..., tabs = 0, line_number = 0, add_to_readme = FALSE)
 }
 \arguments{
 \item{...}{words in the phrase}

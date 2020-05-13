@@ -12,8 +12,8 @@ pdf_to_booklet_order <-
                 pdf_page_num <- pdftools::pdf_length(path_to_pdf)
 
                 if ((pdf_page_num %% 4) != 0) {
-                        mirCat::typewrite(path_to_pdf, "does not have a page length that is a multiple of 4.")
-                        mirCat::stop_before_continue()
+                        typewrite_warning(path_to_pdf, "does not have a page length that is a multiple of 4.")
+                        press_enter()
                 }
 
                 page_number_index <- seq(1, pdf_page_num/2, 2)
@@ -45,5 +45,5 @@ pdf_to_booklet_order <-
                 output_fn <- pdftools::pdf_subset(path_to_pdf,
                                              pages = final_booklet_order)
 
-                mirCat::typewrite(output_fn, "successfully written.")
+                typewrite(output_fn, "successfully written.")
         }

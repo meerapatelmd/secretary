@@ -4,7 +4,7 @@
 \alias{typewrite}
 \title{Returns a phrase with formatting}
 \usage{
-typewrite(..., tabs = 0, line_number = 1, add_to_readme = TRUE)
+typewrite(..., tabs = 0, line_number = 0, add_to_readme = FALSE)
 }
 \arguments{
 \item{...}{words in the phrase}

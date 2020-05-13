@@ -8,7 +8,7 @@
 #' @export
 
 typewrite_italic <-
-        function(..., tabs = 0, line_number = 1, add_to_readme = TRUE) {
+        function(..., tabs = 0, line_number = 0, add_to_readme = FALSE) {
                 x <- paste(..., collapse = " ")
                 x <- stringr::str_replace_all(x, "([ ]{1})([[:punct:]]{1,}$)", "\\2")
 

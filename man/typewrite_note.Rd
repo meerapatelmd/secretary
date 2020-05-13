@@ -4,7 +4,7 @@
 \alias{typewrite_note}
 \title{Returns a NOTE message in console}
 \usage{
-typewrite_note(..., tabs = 0, line_number = 1, add_to_readme = TRUE)
+typewrite_note(..., tabs = 0, line_number = 0, add_to_readme = FALSE)
 }
 \arguments{
 \item{...}{words in the phrase}

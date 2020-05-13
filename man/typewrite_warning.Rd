@@ -4,7 +4,7 @@
 \alias{typewrite_warning}
 \title{Returns a WARNING message in console}
 \usage{
-typewrite_warning(..., tabs = 0, line_number = 1, add_to_readme = TRUE)
+typewrite_warning(..., tabs = 0, line_number = 0, add_to_readme = FALSE)
 }
 \arguments{
 \item{...}{words in the phrase}

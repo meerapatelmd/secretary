@@ -4,7 +4,7 @@
 \alias{typewrite_error}
 \title{Returns a ERROR message in console}
 \usage{
-typewrite_error(..., tabs = 0, line_number = 1, add_to_readme = TRUE)
+typewrite_error(..., tabs = 0, line_number = 0, add_to_readme = FALSE)
 }
 \arguments{
 \item{...}{words in the phrase}

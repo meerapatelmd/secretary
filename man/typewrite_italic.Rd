@@ -4,7 +4,7 @@
 \alias{typewrite_italic}
 \title{Returns a message in console in italic}
 \usage{
-typewrite_italic(..., tabs = 0, line_number = 1, add_to_readme = TRUE)
+typewrite_italic(..., tabs = 0, line_number = 0, add_to_readme = FALSE)
 }
 \arguments{
 \item{...}{words in the phrase}
