@@ -2,7 +2,6 @@
 #' @param ... words in the phrase
 #' @param tabs number of tab spacing desired. defaults to 1.
 #' @param line_number number of lines wanted after the phrase. defaults to 1.
-#' @importFrom stringr str_replace_all
 #' @importFrom crayon yellow
 #' @export
 

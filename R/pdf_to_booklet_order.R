@@ -2,7 +2,6 @@
 #' @param path_to_pdf path to a pdf file with a page number that is a multiple of 4
 #' @importFrom pdftools pdf_length
 #' @importFrom pdftools pdf_subset
-#' @import dplyr
 #' @export
 
 
