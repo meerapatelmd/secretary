@@ -6,20 +6,21 @@
 #' @export
 
 typewrite <-
-        function(..., tabs = 0, line_number = 0, add_to_readme = FALSE) {
-            x <- paste(..., collapse = " ")
-            x <- stringr::str_replace_all(x, "([ ]{1})([[:punct:]]{1,}$)", "\\2")
+        function(..., tabs = 0, line_number = 0, log = FALSE) {
+
+            TypewriteMessage_obj <- make_PlainTypewriteMessage(...)
+
+            TypewriteLines_obj <- new("TypewriteLines",
+                                      TypewriteMessage = TypewriteMessage_obj,
+                                      `Blank Lines` = line_number,
+                                      `Indents` = tabs)
 
 
-            lines <- paste(rep("\n", line_number), collapse = "")
-            indent <- paste(rep("\t", tabs), collapse = "")
-            output <- paste0(lines,
-                             indent,
-                             x,
-                             lines)
+            output <- make_TypewriteOutput(TypewriteLines_obj = TypewriteLines_obj)
 
-            if (add_to_readme == TRUE) {
-                write_typewrite_to_readme(typewrite_message = output)
+
+            if (log == TRUE) {
+                log_TypewriteMessage(TypewriteMessage_obj)
                 cat(output, sep = "\n")
             } else {
                 cat(output, sep = "\n")

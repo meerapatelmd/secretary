@@ -1,31 +1,30 @@
-#' Returns a message in console in italic
-#' @description This function is like the typewrite() function, except there is an "ERROR:" prefix attached to the console in red.
+#' Returns a phrase with formatting
 #' @param ... words in the phrase
 #' @param tabs number of tab spacing desired. defaults to 1.
-#' @param c_return number of lines wanted after the phrase. defaults to 1.
+#' @param line_number number of lines wanted after the phrase. defaults to 1.
 #' @importFrom stringr str_replace_all
 #' @importFrom crayon italic
 #' @export
 
 typewrite_italic <-
-        function(..., tabs = 0, line_number = 0, add_to_readme = FALSE) {
-                x <- paste(..., collapse = " ")
-                x <- stringr::str_replace_all(x, "([ ]{1})([[:punct:]]{1,}$)", "\\2")
+        function(..., tabs = 0, line_number = 0, log = FALSE) {
 
-                x2 <- crayon::italic(x)
+            TypewriteMessage_obj <- make_PlainTypewriteMessage(...)
+            TypewriteMessage_obj@Formatted <- crayon::italic(TypewriteMessage_obj@Plain)
 
-                lines <- paste(rep("\n", line_number), collapse = "")
-                indent <- paste(rep("\t", tabs), collapse = "")
-                output <- paste0(lines,
-                                 indent,
-                                 x2,
-                                 lines)
+            TypewriteLines_obj <- new("TypewriteLines",
+                                      TypewriteMessage = TypewriteMessage_obj,
+                                      `Blank Lines` = line_number,
+                                      `Indents` = tabs)
 
-                if (add_to_readme == TRUE) {
-                    write_typewrite_to_readme(typewrite_message = x)
-                    cat(output, sep = "\n")
-                } else {
-                    cat(output, sep = "\n")
-                }
+
+            output <- make_TypewriteOutput(TypewriteLines_obj = TypewriteLines_obj)
+
+            if (log == TRUE) {
+                log_TypewriteMessage(TypewriteMessage_obj)
+                cat(output, sep = "\n")
+            } else {
+                cat(output, sep = "\n")
+            }
 
         }

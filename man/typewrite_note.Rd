@@ -2,17 +2,17 @@
 % Please edit documentation in R/typewrite_note.R
 \name{typewrite_note}
 \alias{typewrite_note}
-\title{Returns a NOTE message in console}
+\title{Returns a phrase with formatting}
 \usage{
-typewrite_note(..., tabs = 0, line_number = 0, add_to_readme = FALSE)
+typewrite_note(..., tabs = 0, line_number = 0, log = FALSE)
 }
 \arguments{
 \item{...}{words in the phrase}
 
 \item{tabs}{number of tab spacing desired. defaults to 1.}
 
-\item{c_return}{number of lines wanted after the phrase. defaults to 1.}
+\item{line_number}{number of lines wanted after the phrase. defaults to 1.}
 }
 \description{
-This function is like the typewrite() function, except there is an "ERROR:" prefix attached to the console in red.
+Returns a phrase with formatting
 }

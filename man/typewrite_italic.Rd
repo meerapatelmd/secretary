@@ -2,17 +2,17 @@
 % Please edit documentation in R/typewrite_italic.R
 \name{typewrite_italic}
 \alias{typewrite_italic}
-\title{Returns a message in console in italic}
+\title{Returns a phrase with formatting}
 \usage{
-typewrite_italic(..., tabs = 0, line_number = 0, add_to_readme = FALSE)
+typewrite_italic(..., tabs = 0, line_number = 0, log = FALSE)
 }
 \arguments{
 \item{...}{words in the phrase}
 
 \item{tabs}{number of tab spacing desired. defaults to 1.}
 
-\item{c_return}{number of lines wanted after the phrase. defaults to 1.}
+\item{line_number}{number of lines wanted after the phrase. defaults to 1.}
 }
 \description{
-This function is like the typewrite() function, except there is an "ERROR:" prefix attached to the console in red.
+Returns a phrase with formatting
 }
