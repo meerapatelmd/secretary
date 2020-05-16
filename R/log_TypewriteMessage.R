@@ -1,6 +1,4 @@
 #' Log a Typewrite Message to log.md
-#' @importFrom broca create_log.md
-#' @importFrom broca log_this
 #' @importFrom stampede stamp_this
 #' @export
 
