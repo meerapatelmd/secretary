@@ -1,7 +1,6 @@
 #' Log a Typewrite Message to log.md
 #' @importFrom broca create_log.md
 #' @importFrom broca log_this
-#' @importFrom cave present_script_path
 #' @export
 
 log_TypewriteMessage <-

@@ -10,7 +10,6 @@ typewrite_bold <-
         function(..., tabs = 0, line_number = 0, log = FALSE) {
 
             TypewriteMessage_obj <- make_PlainTypewriteMessage(...)
-
             TypewriteMessage_obj@Formatted <- crayon::bold(TypewriteMessage_obj@Plain)
 
             TypewriteLines_obj <- new("TypewriteLines",
