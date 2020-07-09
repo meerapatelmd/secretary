@@ -24,6 +24,7 @@ TypewriteLines <-
 #' @export TypewriteMessageLog
 #' @exportClass TypewriteMessageLog
 
+
 TypewriteMessageLog <-
     setClass("TypewriteMessageLog",
              representation(Timestamp = "character",
