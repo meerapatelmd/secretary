@@ -4,7 +4,11 @@
 
 make_PlainTypewriteMessage <-
     function(...) {
+        concatenated_words <-
+                list2(...) %>%
+                unlist() %>%
+                paste(collapse = " ")
         TypewriteMessage_obj <- new("TypewriteMessage")
-        TypewriteMessage_obj@Plain <- concat_words(...)
+        TypewriteMessage_obj@Plain <- concatenated_words
         return(TypewriteMessage_obj)
     }

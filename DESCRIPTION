@@ -12,8 +12,4 @@ LazyData: true
 RoxygenNote: 7.1.1
 Imports: 
     crayon,
-    stampede,
-    pdftools,
-    crayon
-Remotes:
-    patelm9/stampede
+    pdftools

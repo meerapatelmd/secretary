@@ -1,11 +1,10 @@
 #' Log a Typewrite Message to log.md
-#' @importFrom stampede stamp_this
 #' @export
 
 log_TypewriteMessage <-
     function(TypewriteMessage_obj, disable_rstudioapi = FALSE) {
                 TypewriteMessageLog_obj <- new("TypewriteMessageLog",
-                                               Timestamp = stampede::stamp_this(),
+                                               Timestamp = Sys.time(),
                                                Message = TypewriteMessage_obj)
 
                 if (disable_rstudioapi == FALSE) {
