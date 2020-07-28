@@ -1,5 +1,4 @@
 #' Add a TickTick Task from the console
-#' @import postfixR
 #' @export
 
 add_ticktick_task <-
