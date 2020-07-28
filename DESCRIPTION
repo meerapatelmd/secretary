@@ -1,12 +1,11 @@
 Package: secretary
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: secretary Package
+Version: 0.2.0
+Author: Meera Y. Patel, MD
+Maintainer: Meera Y. Patel, MD <patelmeeray@gmail.com>
+Description: This package prints messages to the user in the R console and/or a log.md file in the working directory. The crayon R Package is used to provide additional formatting options.
+License: Apache License 2.0
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
