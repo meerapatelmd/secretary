@@ -9,3 +9,6 @@ make_PlainTypewriteMessage(...)
 \description{
 This function fills the Plain slot of the TypewriteMessage object from the input
 }
+\seealso{
+\code{\link[rlang]{list2}}
+}

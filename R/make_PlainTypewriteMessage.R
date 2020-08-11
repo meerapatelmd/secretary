@@ -1,7 +1,12 @@
-#' Make a PlainTypewriteMessage
-#' @description This function fills the Plain slot of the TypewriteMessage object from the input
-#' @importFrom rlang list2
+#' @title Make a PlainTypewriteMessage
+#' @description
+#' This function fills the Plain slot of the TypewriteMessage object from the input
+#' @seealso
+#'  \code{\link[rlang]{list2}}
+#' @rdname make_PlainTypewriteMessage
 #' @export
+#' @importFrom magrittr %>%
+#' @importFrom rlang list2
 
 make_PlainTypewriteMessage <-
     function(...) {
