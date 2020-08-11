@@ -1,7 +1,7 @@
 Package: secretary
 Type: Package
 Title: secretary Package
-Version: 0.2.1
+Version: 1.0.0
 Author: Meera Y. Patel, MD
 Maintainer: Meera Y. Patel, MD <patelmeeray@gmail.com>
 Description: This package prints messages to the user in the R console and/or a log.md file in the working directory. The crayon R Package is used to provide additional formatting options.
