@@ -12,5 +12,4 @@ RoxygenNote: 7.1.1
 Imports: 
     crayon,
     magrittr,
-    rlang,
-    pdftools (<= 2.3.1)
+    rlang
