@@ -2,3 +2,6 @@
 
 language: R
 cache: packages
+before_install:
+  - sudo apt-get update
+  - sudo apt install libcurl4-openssl-dev
