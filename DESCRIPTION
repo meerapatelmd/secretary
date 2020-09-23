@@ -13,4 +13,4 @@ Imports:
     crayon,
     magrittr,
     rlang,
-    pdftools (>= 2.3.1)
+    pdftools (<= 2.3.1)
