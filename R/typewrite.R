@@ -1,8 +1,16 @@
-#' Returns a phrase with formatting
-#' @param ... words in the phrase
-#' @param tabs number of tab spacing desired. defaults to 1.
-#' @param line_number number of lines wanted after the phrase. defaults to 1.
+#' @title
+#' Typewrite
+#' @param ... Strings to concatenate into a single message
+#' @param tabs Number of tabs to indent the message before it is printed to the console, Default: 0
+#' @param line_number Number of lines to skip before and after the message is printed to the console, Default: 0
+#' @param timepunched Should the message be prefixed with a bracketed timestamp?, Default: TRUE
+#' @param file Argument passed to the cat function if the message should also be saved to a file, Default: ''
+#' @param append Argument passed to the cat function if the message should be appended to the file argument, Default: TRUE
+#' @seealso
+#'  \code{\link[crayon]{strip_style}}
+#' @rdname typewrite
 #' @export
+#' @importFrom crayon strip_style
 
 typewrite <-
         function(...,

@@ -1,8 +1,8 @@
-#' Returns a phrase with formatting
-#' @param ... words in the phrase
-#' @param tabs number of tab spacing desired. defaults to 1.
-#' @param line_number number of lines wanted after the phrase. defaults to 1.
-#' @importFrom crayon red
+#' @title
+#' Typewrite an Error Message
+#'
+#' @inheritParams typewrite
+#' @rdname typewrite_error
 #' @export
 
 typewrite_error <-
@@ -26,11 +26,11 @@ typewrite_error <-
 
 }
 
-#' Returns a phrase with formatting
-#' @param ... words in the phrase
-#' @param tabs number of tab spacing desired. defaults to 1.
-#' @param line_number number of lines wanted after the phrase. defaults to 1.
-#' @importFrom crayon red
+#' @title
+#' Typewrite a Warning Message
+#'
+#' @inheritParams typewrite
+#' @rdname typewrite_warning
 #' @export
 
 typewrite_warning <-
@@ -55,11 +55,11 @@ typewrite_warning <-
         }
 
 
-#' Returns a phrase with formatting
-#' @param ... words in the phrase
-#' @param tabs number of tab spacing desired. defaults to 1.
-#' @param line_number number of lines wanted after the phrase. defaults to 1.
-#' @importFrom crayon red
+#' @title
+#' Typewrite a Note
+#'
+#' @inheritParams typewrite
+#' @rdname typewrite_note
 #' @export
 
 typewrite_note <-
