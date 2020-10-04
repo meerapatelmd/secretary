@@ -5,7 +5,13 @@
 #' @export
 
 typewrite <-
-        function(..., tabs = 0, line_number = 0, log = FALSE) {
+        function(...,
+                 tabs = 0,
+                 line_number = 0,
+                 timepunched = TRUE,
+                 file,
+                 append = TRUE,
+                 log = FALSE) {
 
             TypewriteMessage_obj <- make_PlainTypewriteMessage(...)
 
@@ -18,11 +24,24 @@ typewrite <-
             output <- make_TypewriteOutput(TypewriteLines_obj = TypewriteLines_obj)
 
 
-            if (log == TRUE) {
-                log_TypewriteMessage(TypewriteMessage_obj)
-                cat(output, sep = "\n")
+            if (timepunched == TRUE) {
+
+                cat(paste0(timepunch(), "\t", output), sep = "\n")
+
+                    if (!missing(file)) {
+                            cat(paste0(timepunch(), "\t", output), sep = "\n", file = file, append = append)
+                    }
+
             } else {
+
                 cat(output, sep = "\n")
+
+
+                    if (!missing(file)) {
+                            cat(paste0(timepunch(), "\t", output), sep = "\n", file = file, append = append)
+                    }
+
+
             }
 
         }
