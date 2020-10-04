@@ -7,6 +7,7 @@
 #' @export
 #' @importFrom magrittr %>%
 #' @importFrom rlang list2
+#' @noRd
 
 make_PlainTypewriteMessage <-
     function(...) {
