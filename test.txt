@@ -1,7 +1,3 @@
-[2020-10-04 14:40:07]	Mary had a little lamb
-[2020-10-04 14:40:41]	Mary had a little lamb
-[2020-10-04 14:40:46]	Mary had a little lamb
-[2020-10-04 14:40:48]	Mary had a little lamb
-[2020-10-04 14:40:50]	Mary had a little lamb
-[2020-10-04 14:40:53]	Mary had a little lamb
-[2020-10-04 14:40:55]	Mary had a little lamb
+[2020-10-04 15:00:59]	Error: test
+[2020-10-04 15:01:58]	Warning: test
+[2020-10-04 15:02:04]	Note: test

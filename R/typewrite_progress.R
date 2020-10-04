@@ -6,26 +6,15 @@
 
 
 typewrite_progress <-
-    function(iteration_n,
-             .input,
-             timestamped = TRUE) {
+    function(iteration,
+             total,
+             file = "",
+             append = TRUE) {
 
+            percentage_label <- paste0(signif(((iteration/total)*100), digits = 2), "%")
+            iteration_label <- paste0(iteration, "/", total)
 
-            if (is.data.frame(.input)) {
-                    total_iterations <- nrow(.input)
-            } else {
-
-                    total_iterations <- length(.input)
-            }
-
-            if (timestamped) {
-
-                    typewrite(paste0("[", Sys.time(), "]"), "\tLoading ", iteration_n, " of ", total_iterations)
-
-            } else {
-
-                    typewrite("Loading ", iteration_n, " of ", total_iterations)
+            typewrite(iteration_label, paste0("(", percentage_label, ")"), timepunched = TRUE, file = file, append = append)
 
             }
 
-    }

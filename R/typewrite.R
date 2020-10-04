@@ -9,7 +9,7 @@ typewrite <-
                  tabs = 0,
                  line_number = 0,
                  timepunched = TRUE,
-                 file,
+                 file = "",
                  append = TRUE,
                  log = FALSE) {
 
@@ -28,8 +28,8 @@ typewrite <-
 
                 cat(paste0(timepunch(), "\t", output), sep = "\n")
 
-                    if (!missing(file)) {
-                            cat(paste0(timepunch(), "\t", output), sep = "\n", file = file, append = append)
+                    if (file != "") {
+                            cat(paste0(timepunch(), "\t",crayon::strip_style(output)), sep = "\n", file = file, append = append)
                     }
 
             } else {
@@ -37,8 +37,8 @@ typewrite <-
                 cat(output, sep = "\n")
 
 
-                    if (!missing(file)) {
-                            cat(paste0(timepunch(), "\t", output), sep = "\n", file = file, append = append)
+                    if (file != "") {
+                            cat(paste0(timepunch(), "\t", crayon::strip_style(output)), sep = "\n", file = file, append = append)
                     }
 
 
