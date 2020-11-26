@@ -1,4 +1,5 @@
 #' Set TypewriteMessage Class
+#' @noRd
 #' @export TypewriteMessage
 #' @exportClass TypewriteMessage
 

@@ -1,4 +1,5 @@
 #' Make the final output to be printed to console
+#' @noRd
 #' @export
 
 make_TypewriteOutput <-

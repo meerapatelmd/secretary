@@ -2,17 +2,34 @@
 % Please edit documentation in R/typewrite.R
 \name{typewrite}
 \alias{typewrite}
-\title{Returns a phrase with formatting}
+\title{Typewrite}
 \usage{
-typewrite(..., tabs = 0, line_number = 0, log = FALSE)
+typewrite(
+  ...,
+  tabs = 0,
+  line_number = 0,
+  timepunched = TRUE,
+  file = "",
+  append = TRUE,
+  log = FALSE
+)
 }
 \arguments{
-\item{...}{words in the phrase}
+\item{...}{Strings to concatenate into a single message}
 
-\item{tabs}{number of tab spacing desired. defaults to 1.}
+\item{tabs}{Number of tabs to indent the message before it is printed to the console, Default: 0}
 
-\item{line_number}{number of lines wanted after the phrase. defaults to 1.}
+\item{line_number}{Number of lines to skip before and after the message is printed to the console, Default: 0}
+
+\item{timepunched}{Should the message be prefixed with a bracketed timestamp?, Default: TRUE}
+
+\item{file}{Argument passed to the cat function if the message should also be saved to a file, Default: ''}
+
+\item{append}{Argument passed to the cat function if the message should be appended to the file argument, Default: TRUE}
 }
 \description{
-Returns a phrase with formatting
+Typewrite
+}
+\seealso{
+\code{\link[crayon]{strip_style}}
 }

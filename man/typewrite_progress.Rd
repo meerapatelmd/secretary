@@ -4,7 +4,7 @@
 \alias{typewrite_progress}
 \title{Typewrite Progress of a Loop}
 \usage{
-typewrite_progress(iteration_n, .input, timestamped = TRUE)
+typewrite_progress(iteration, total, file = "", append = TRUE)
 }
 \arguments{
 \item{iteration_n}{integer of iteration of the loop}
