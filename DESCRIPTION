@@ -2,8 +2,12 @@ Package: secretary
 Type: Package
 Title: secretary Package
 Version: 1.0.0
-Author: Meera Y. Patel, MD
-Maintainer: Meera Y. Patel, MD <patelmeeray@gmail.com>
+Authors@R: 
+    person(given = "Meera",
+           family = "Patel, MD",
+           role = c("aut", "cre"),
+           email = "patelmeeray@gmail.com",
+           comment = c(ORCID = "0000-0002-3401-3948"))
 Description: This package prints messages to the user in the R console and/or a log.md file in the working directory. The crayon R Package is used to provide additional formatting options.
 License: Apache License 2.0
 Encoding: UTF-8
