@@ -16,7 +16,6 @@ RoxygenNote: 7.1.1
 Imports: 
     crayon,
     magrittr,
-    pdftools,
     rlang
 URL: https://meerapatelmd.github.io/secretary/, https://github.com/meerapatelmd/secretary/
 BugReports: https://github.com/meerapatelmd/secretary/issues/ 
